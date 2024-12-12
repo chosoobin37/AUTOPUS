@@ -1,4 +1,4 @@
-package com.study.autopus.join.dto;
+package com.study.autopus.login.dto;
 
 import lombok.*;
 
@@ -10,7 +10,7 @@ import java.util.Date;
 @Setter
 @ToString
 @Builder
-public class JoinDTO {
+public class LoginDTO {
     private int memberId;
     private String memberName;
     private String memberMobile;

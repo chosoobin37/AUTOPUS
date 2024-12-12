@@ -1,4 +1,4 @@
-package com.study.autopus.join.aggregate;
+package com.study.autopus.login.aggregate;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -8,7 +8,7 @@ import java.util.Date;
 @Data
 @Entity
 @Table(name = "member_info")
-public class Join {
+public class Login {
     @Id
     @Column(name = "member_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
