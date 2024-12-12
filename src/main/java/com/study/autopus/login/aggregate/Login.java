@@ -21,7 +21,7 @@ public class Login {
     private String memberMobile;
 
     @Column(name = "member_birth")
-    private String memberBirth;
+    private Date memberBirth;
 
     @Column(name = "member_address")
     private String memberAddress;
