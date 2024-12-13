@@ -1,7 +1,9 @@
 package com.study.autopus.login.service;
 
-import com.study.autopus.login.dto.LoginResponseDTO;
+import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;
 
 public interface LoginService {
-    LoginResponseDTO loginByNaver(String code, String naver);
+    String loginByNaver(String code);
+
+    void saveNaverUser(OAuth2AuthenticationToken authentication);
 }

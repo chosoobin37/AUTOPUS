@@ -29,6 +29,9 @@ public class Login {
     @Column(name = "member_gender")
     private String memberGender;
 
+    @Column(name = "member_email", unique = true) // 이메일 필드 추가
+    private String memberEmail;
+
     @Column(name = "member_join")
     private Date memberJoin;
 
