@@ -2,8 +2,6 @@ package com.study.autopus.login.dto;
 
 import lombok.*;
 
-import java.util.Date;
-
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
