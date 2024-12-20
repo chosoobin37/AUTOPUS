@@ -4,6 +4,5 @@ import org.springframework.security.oauth2.client.authentication.OAuth2Authentic
 
 public interface LoginService {
     String loginByNaver(String code);
-
     void saveNaverUser(OAuth2AuthenticationToken authentication);
 }

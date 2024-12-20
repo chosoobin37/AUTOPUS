@@ -10,21 +10,6 @@ import org.springframework.web.client.RestTemplate;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
-//    @Bean
-//    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-//        http
-//                .csrf(csrf -> csrf.disable()) // CSRF 비활성화
-//                .authorizeHttpRequests(auth -> auth
-//                        .anyRequest().permitAll() // 모든 요청 허용
-//                )
-//                .formLogin(form -> form
-//                        .loginPage("/login") // 커스텀 로그인 페이지 설정
-//                        .permitAll() // 로그인 페이지는 인증 없이 허용
-//                );
-//
-//        return http.build();
-//    }
-
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http

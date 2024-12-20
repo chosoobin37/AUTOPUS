@@ -19,16 +19,13 @@ public class LoginController {
 
     @GetMapping("/login/naver")
     public ResponseEntity<String> loginByNaver(@RequestParam(name = "code") String code) {
-        // 네이버 인증 코드 처리 및 사용자 정보 조회
         String userInfo = loginService.loginByNaver(code);
 
-        // 사용자 정보 반환 (예제)
         return ResponseEntity.ok("로그인 성공! 사용자 정보: " + userInfo);
     }
 
     @GetMapping("/home")
     public String homePage(OAuth2AuthenticationToken authentication) {
-        // 네이버 사용자 정보 저장
         loginService.saveNaverUser(authentication);
         return "로그인 성공! 환영합니다.";
     }
