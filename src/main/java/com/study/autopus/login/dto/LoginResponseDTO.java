@@ -9,9 +9,9 @@ import lombok.*;
 @ToString
 @Builder
 public class LoginResponseDTO {
-    private int memberId;          // 회원 ID
-    private String memberName;     // 회원 이름
-    private String memberMobile;   // 회원 핸드폰 번호
-    private String memberAddress;  // 회원 주소
-    private String memberGender;   // 회원 성별
+    private int memberId;
+    private String memberName;
+    private String memberMobile;
+    private String memberAddress;
+    private String memberGender;
 }
